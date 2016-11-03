@@ -67,6 +67,7 @@ body {
 
 .grid-extra-small-1, .grid-extra-small-2, .grid-extra-small-3, .grid-extra-small-4, .grid-extra-small-5, .grid-extra-small-6, .grid-extra-small-7, .grid-extra-small-8, .grid-extra-small-9, .grid-extra-small-10, .grid-extra-small-11, .grid-extra-small-12 {
   float: left;
+  background-color: darkgray;
 }
 .grid-extra-small-12 {
   width: 100%;
@@ -150,6 +151,7 @@ body {
 @media (min-width: 768px) {
   .grid-small-1, .grid-small-2, .grid-small-3, .grid-small-4, .grid-small-5, .grid-small-6, .grid-small-7, .grid-small-8, .grid-small-9, .grid-small-10, .grid-small-11, .grid-small-12 {
     float: left;
+    background-color: darkgray;
   }
   .grid-small-12 {
     width: 100%;
@@ -234,6 +236,7 @@ body {
 @media (min-width: 992px) {
   .grid-medium-1, .grid-medium-2, .grid-medium-3, .grid-medium-4, .grid-medium-5, .grid-medium-6, .grid-medium-7, .grid-medium-8, .grid-medium-9, .grid-medium-10, .grid-medium-11, .grid-medium-12 {
     float: left;
+    background-color: darkgray;
   }
   .grid-medium-12 {
     width: 100%;
@@ -319,6 +322,7 @@ body {
 @media (min-width: 1200px) {
   .grid-large-1, .grid-large-2, .grid-large-3, .grid-large-4, .grid-large-5, .grid-large-6, .grid-large-7, .grid-large-8, .grid-large-9, .grid-large-10, .grid-large-11, .grid-large-12 {
     float: left;
+    background-color: darkgray;
   }
   .grid-large-12 {
     width: 100%;
@@ -522,4 +526,21 @@ body {
   margin-bottom: 30px;
   color: @color-white;
   background-color: @light-blue;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+  margin-bottom: 15px;
+}
+
+.container:after,
+.container-fluid:after,
+.row:after {
+  clear: both;
 }
